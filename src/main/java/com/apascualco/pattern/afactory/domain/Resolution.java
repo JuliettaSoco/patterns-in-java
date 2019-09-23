@@ -1,4 +1,4 @@
-package com.apascualco.pattern.afactory.dominio;
+package com.apascualco.pattern.afactory.domain;
 
 public class Resolution {
 

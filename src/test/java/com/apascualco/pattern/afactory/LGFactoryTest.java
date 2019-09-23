@@ -1,13 +1,13 @@
 package com.apascualco.pattern.afactory;
 
 
-import com.apascualco.pattern.afactory.dominio.*;
-import com.apascualco.pattern.afactory.facoria.AbstractMonitor;
-import com.apascualco.pattern.afactory.facoria.LG;
+import com.apascualco.pattern.afactory.domain.*;
+import com.apascualco.pattern.afactory.factory.AbstractMonitor;
+import com.apascualco.pattern.afactory.factory.LG;
 import org.junit.Test;
 
-import static com.apascualco.pattern.afactory.dominio.Type.LCD;
-import static com.apascualco.pattern.afactory.dominio.Type.VGA;
+import static com.apascualco.pattern.afactory.domain.Type.LCD;
+import static com.apascualco.pattern.afactory.domain.Type.VGA;
 import static org.junit.Assert.*;
 
 public class LGFactoryTest {

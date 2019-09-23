@@ -1,10 +1,10 @@
-package com.apascualco.pattern.afactory.facoria;
+package com.apascualco.pattern.afactory.factory;
 
-import com.apascualco.pattern.afactory.dominio.*;
+import com.apascualco.pattern.afactory.domain.*;
 
-public class Samsung implements AbstractMonitor {
+public class Sony implements AbstractMonitor {
 
-    private final static String BRAND = "Samsung";
+    private final static String BRAND = "Sony";
 
     @Override
     public Monitor create5k(final boolean curve, final Type screenType) {

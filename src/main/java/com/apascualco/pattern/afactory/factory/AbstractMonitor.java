@@ -1,8 +1,8 @@
-package com.apascualco.pattern.afactory.facoria;
+package com.apascualco.pattern.afactory.factory;
 
-import com.apascualco.pattern.afactory.dominio.Monitor;
-import com.apascualco.pattern.afactory.dominio.Resolution;
-import com.apascualco.pattern.afactory.dominio.Type;
+import com.apascualco.pattern.afactory.domain.Monitor;
+import com.apascualco.pattern.afactory.domain.Resolution;
+import com.apascualco.pattern.afactory.domain.Type;
 
 public interface AbstractMonitor {
 

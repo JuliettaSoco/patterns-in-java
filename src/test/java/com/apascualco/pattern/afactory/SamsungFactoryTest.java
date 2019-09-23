@@ -1,12 +1,12 @@
 package com.apascualco.pattern.afactory;
 
-import com.apascualco.pattern.afactory.dominio.*;
-import com.apascualco.pattern.afactory.facoria.Samsung;
-import com.apascualco.pattern.afactory.facoria.AbstractMonitor;
+import com.apascualco.pattern.afactory.domain.*;
+import com.apascualco.pattern.afactory.factory.Samsung;
+import com.apascualco.pattern.afactory.factory.AbstractMonitor;
 import org.junit.Test;
 
-import static com.apascualco.pattern.afactory.dominio.Type.LCD;
-import static com.apascualco.pattern.afactory.dominio.Type.LED;
+import static com.apascualco.pattern.afactory.domain.Type.LCD;
+import static com.apascualco.pattern.afactory.domain.Type.LED;
 import static org.junit.Assert.*;
 
 public class SamsungFactoryTest {

@@ -1,6 +1,6 @@
-package com.apascualco.pattern.afactory.facoria;
+package com.apascualco.pattern.afactory.factory;
 
-import com.apascualco.pattern.afactory.dominio.*;
+import com.apascualco.pattern.afactory.domain.*;
 
 public class LG implements AbstractMonitor {
 
