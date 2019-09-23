@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/apascualco/patterns.svg?branch=master)](https://travis-ci.org/apascualco/patterns)
+[![Build Status](https://travis-ci.org/apascualco/patterns-in-java.svg?branch=master)](https://travis-ci.org/apascualco/patterns-in-java)
+[![codecov](https://codecov.io/gh/apascualco/patterns-in-java/branch/master/graph/badge.svg)](https://codecov.io/gh/apascualco/patterns-in-java)
 # patterns
 
 # Creational pattern
