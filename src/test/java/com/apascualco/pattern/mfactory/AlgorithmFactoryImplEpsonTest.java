@@ -1,17 +1,19 @@
 package com.apascualco.pattern.mfactory;
 
 import com.apascualco.pattern.mfactory.creator.AlgorithmFactory;
+import com.apascualco.pattern.mfactory.creator.AlgorithmFactoryImpl;
 import com.apascualco.pattern.mfactory.domain.Algorithm;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-public class AlgorithmFactoryEpsonTest {
+public class AlgorithmFactoryImplEpsonTest {
+
+    private final AlgorithmFactory algorithmFactory = new AlgorithmFactoryImpl();
 
     @Test
     public void encode_sha256() {
-        final AlgorithmFactory algorithmFactory = new AlgorithmFactory();
         final Algorithm algorithm = algorithmFactory.getInstance("SHA256");
         final String encoded = algorithm.encode("Factory method");
         assertNotNull(encoded);
@@ -21,7 +23,6 @@ public class AlgorithmFactoryEpsonTest {
 
     @Test
     public void encode_sha384() {
-        final AlgorithmFactory algorithmFactory = new AlgorithmFactory();
         final Algorithm algorithm = algorithmFactory.getInstance("SHA384");
         final String encoded = algorithm.encode("Factory method");
         assertNotNull(encoded);
@@ -31,7 +32,6 @@ public class AlgorithmFactoryEpsonTest {
 
     @Test
     public void encode_sha512() {
-        final AlgorithmFactory algorithmFactory = new AlgorithmFactory();
         final Algorithm algorithm = algorithmFactory.getInstance("SHA512");
         final String encoded = algorithm.encode("Factory method");
         assertNotNull(encoded);
@@ -42,7 +42,6 @@ public class AlgorithmFactoryEpsonTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void algorithm_not_implemented() {
-        final AlgorithmFactory algorithmFactory = new AlgorithmFactory();
         algorithmFactory.getInstance("SHA52");
     }
 }
