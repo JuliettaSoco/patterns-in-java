@@ -21,6 +21,10 @@
         <!-- Utils -->
         <junit.version>4.12</junit.version>
 
+        <!-- Maven config -->
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+
         <!-- Plugins -->
         <maven-failsafe-plugin.version>3.0.0-M3</maven-failsafe-plugin.version>
         <jacoco.version>0.8.4</jacoco.version>
