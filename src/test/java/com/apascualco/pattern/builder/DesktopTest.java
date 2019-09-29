@@ -17,9 +17,9 @@ public class DesktopTest {
         Director.constructPCDesign(desktopBuilder);
 
         final Desktop design = desktopBuilder.build();
-        assertEquals(design.getType(), Type.PRO);
-        assertEquals(design.getProcessor(), "i7-7700K 4.2GHZ");
-        assertEquals(design.getRam(), 128);
+        assertEquals( Type.PRO, design.getType());
+        assertEquals("i7-7700K 4.2GHZ", design.getProcessor());
+        assertEquals(128, design.getRam());
     }
 
     @Test
@@ -28,9 +28,9 @@ public class DesktopTest {
 
         Director.constructPCGaming(desktopBuilder);
         final Desktop gaming = desktopBuilder.build();
-        assertEquals(gaming.getType(), Type.GAMING);
-        assertEquals(gaming.getProcessor(), "i7-7700K 4.2GHZ");
-        assertEquals(gaming.getRam(), 64);
+        assertEquals(Type.GAMING, gaming.getType());
+        assertEquals("i7-7700K 4.2GHZ", gaming.getProcessor());
+        assertEquals(64, gaming.getRam());
     }
 
     @Test
@@ -39,9 +39,9 @@ public class DesktopTest {
 
         Director.constructPCMobility(desktopBuilder);
         final Desktop mobility = desktopBuilder.build();
-        assertEquals(mobility.getType(), Type.PRO);
-        assertEquals(mobility.getProcessor(), "i5-7500");
-        assertEquals(mobility.getRam(), 32);
+        assertEquals(Type.PRO, mobility.getType());
+        assertEquals("i5-7500", mobility.getProcessor());
+        assertEquals(32, mobility.getRam());
     }
 
     @Test
@@ -50,9 +50,9 @@ public class DesktopTest {
 
         Director.constructPCTravel(desktopBuilder);
         final Desktop travel = desktopBuilder.build();
-        assertEquals(travel.getType(), Type.HOME);
-        assertEquals(travel.getProcessor(), "i5-7500");
-        assertEquals(travel.getRam(), 18);
+        assertEquals(Type.HOME, travel.getType());
+        assertEquals("i5-7500", travel.getProcessor());
+        assertEquals(18, travel.getRam());
     }
 
 }

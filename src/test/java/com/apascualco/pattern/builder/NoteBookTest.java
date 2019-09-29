@@ -11,47 +11,47 @@ import static org.junit.Assert.assertEquals;
 public class NoteBookTest {
 
     @Test
-    public void desktop_construct_pc_design() {
+    public void notebook_construct_pc_design() {
         final NoteBookBuilder noteBookBuilder= new NoteBookBuilder();
 
         Director.constructPCDesign(noteBookBuilder);
         final NoteBook design = noteBookBuilder.build();
-        assertEquals(design.getType(), Type.PRO);
-        assertEquals(design.getProcessor(), "i7-7700K 4.2GHZ");
-        assertEquals(design.getRam(), 128);
+        assertEquals(Type.PRO, design.getType());
+        assertEquals("i7-7700K 4.2GHZ", design.getProcessor());
+        assertEquals(128,design.getRam());
     }
 
     @Test
-    public void desktop_construct_pc_gaming() {
+    public void notebook_construct_pc_gaming() {
         final NoteBookBuilder noteBookBuilder= new NoteBookBuilder();
 
         Director.constructPCDesign(noteBookBuilder);
         final NoteBook gaming = noteBookBuilder.build();
-        assertEquals(gaming.getType(), Type.GAMING);
-        assertEquals(gaming.getProcessor(), "i7-7700K 4.2GHZ");
-        assertEquals(gaming.getRam(), 64);
+        assertEquals(Type.PRO, gaming.getType());
+        assertEquals("i7-7700K 4.2GHZ", gaming.getProcessor());
+        assertEquals(128, gaming.getRam());
     }
 
     @Test
-    public void desktop_construct_pc_mobility() {
+    public void notebook_construct_pc_mobility() {
         final NoteBookBuilder noteBookBuilder= new NoteBookBuilder();
 
         Director.constructPCDesign(noteBookBuilder);
         final NoteBook mobility = noteBookBuilder.build();
-        assertEquals(mobility.getType(), Type.PRO);
-        assertEquals(mobility.getProcessor(), "i5-7500");
-        assertEquals(mobility.getRam(), 32);
+        assertEquals(Type.PRO, mobility.getType());
+        assertEquals("i7-7700K 4.2GHZ", mobility.getProcessor());
+        assertEquals(128, mobility.getRam()) ;
     }
 
     @Test
-    public void desktop_construct_pc_travel() {
+    public void notebook_construct_pc_travel() {
         final NoteBookBuilder noteBookBuilder= new NoteBookBuilder();
 
         Director.constructPCDesign(noteBookBuilder);
         final NoteBook travel = noteBookBuilder.build();
-        assertEquals(travel.getType(), Type.HOME);
-        assertEquals(travel.getProcessor(), "i5-7500");
-        assertEquals(travel.getRam(), 18);
+        assertEquals(Type.PRO, travel.getType());
+        assertEquals("i7-7700K 4.2GHZ", travel.getProcessor());
+        assertEquals(128, travel.getRam());
     }
 
 }
