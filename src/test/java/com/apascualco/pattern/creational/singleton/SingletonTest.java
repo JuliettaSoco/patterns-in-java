@@ -1,5 +1,6 @@
 package com.apascualco.pattern.creational.singleton;
 
+import com.apascualco.pattern.creational.singleton.domain.ShopApplication;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;

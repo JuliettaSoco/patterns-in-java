@@ -1,4 +1,4 @@
-package com.apascualco.pattern.creational.singleton;
+package com.apascualco.pattern.creational.singleton.domain;
 
 public class ShopApplication {
     private static ShopApplication instance;
