@@ -19,7 +19,7 @@ public class PrototypeClientTest {
     }
 
     @Test
-    public void newObjectFromAndroidPrototype() throws CloneNotSupportedException {
+    public void new_object_fromAndroid_prototype() throws CloneNotSupportedException {
         final Android androidSystem = this.androidBaseSystem.clone();
         androidSystem.addApplication("Twilight");
         androidSystem.addApplication("Automate");
@@ -32,7 +32,7 @@ public class PrototypeClientTest {
     }
 
     @Test
-    public void newObjectFromIOSPrototype() throws CloneNotSupportedException {
+    public void new_object_from_IOS_prototype() throws CloneNotSupportedException {
         final IOS iosSystem = this.iosBaseSystem.clone();
         iosSystem.addApplication("Todoist");
         iosSystem.addApplication("Instapaper");
