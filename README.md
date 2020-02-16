@@ -10,6 +10,12 @@ Buider: com.apascualco.pattern.creational.builder
  
 Method factory: com.apascualco.pattern.creational.mfactory
 
-Prototype: com.apascualco.pattern.prototype
+Prototype: com.apascualco.pattern.creational.prototype
+
+Singleton: com.apascualco.pattern.creational.singleton
+
+# Structural pattern
+
+Adapter: com.apascualco.pattern.structural.adapter
 
 - Blog: https://www.apascualco.com/
