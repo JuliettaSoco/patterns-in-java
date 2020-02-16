@@ -17,7 +17,7 @@ public class AreaTest {
         final Rectangle rectangle = ScreenRectangleAdapter.of(screen);
         final int area = Area.calculate(rectangle);
 
-        assertEquals("With must be 5",5, rectangle.getWith());
+        assertEquals("Width must be 5",5, rectangle.getWidth());
         assertEquals("Height must be 5",5, rectangle.getHeight());
         assertEquals("The area must be 25",25, area);
     }

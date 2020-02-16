@@ -14,11 +14,11 @@ public class ScreenRectangleAdapter implements Rectangle {
 
     @Override
     public int getHeight() {
-        return screen.getWith();
+        return screen.getWidth();
     }
 
     @Override
-    public int getWith() {
-        return screen.getWith();
+    public int getWidth() {
+        return screen.getWidth();
     }
 }
