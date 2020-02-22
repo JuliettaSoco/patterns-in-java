@@ -18,4 +18,6 @@ Singleton: com.apascualco.pattern.creational.singleton
 
 Adapter: com.apascualco.pattern.structural.adapter
 
+Bridge: Adapter: com.apascualco.pattern.structural.bridge
+
 - Blog: https://www.apascualco.com/
